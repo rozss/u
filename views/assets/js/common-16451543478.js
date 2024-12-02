@@ -1,7 +1,7 @@
 /* -----------------------------------------------
 /* Authors: QuiteAFancyEmerald, Yoct, and OlyB
 /* GNU Affero General Public License v3.0: https://www.gnu.org/licenses/agpl-3.0.en.html
-/* MAIN Holy Unblocker LTS Common Script
+/* MAIN FGU LTS Common Script
 /* ----------------------------------------------- */
 
 // Encase everything in a new scope so that variables are not accidentally
@@ -406,9 +406,9 @@ addEventListener('DOMContentLoaded', async () => {
 
     youtube: urlHandler(uvUrl('https://youtube.com')),
 
-    discordUV: urlHandler(uvUrl('https://discord.com/app')),
+    ...UV: urlHandler(uvUrl('https://....com/app')),
 
-    discordRH: urlHandler(await RammerheadEncode('https://discord.com/app')),
+    ...RH: urlHandler(await RammerheadEncode('https://....com/app')),
   });
 
   // Attach event listeners using goProx to specific app menus that need it.
@@ -453,8 +453,8 @@ addEventListener('DOMContentLoaded', async () => {
   prSet('pr-uv', 'ultraviolet');
   prSet('pr-rh', 'rammerhead');
   prSet('pr-yt', 'youtube');
-  prSet('pr-rh-dc', 'discordRH');
-  prSet('pr-uv-dc', 'discordUV');
+  prSet('pr-rh-dc', '...RH');
+  prSet('pr-uv-dc', '...UV');
 
   // Load in relevant JSON files used to organize large sets of data.
   // This first one is for links, whereas the rest are for navigation menus.

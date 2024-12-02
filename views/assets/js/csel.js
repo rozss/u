@@ -141,7 +141,7 @@ if (document.getElementById('csel')) {
       // Allow users to reset the title to default if nothing is entered.
       focusElement.focus();
       removeCookie('HBTitle');
-      pageTitle('Holy Unblocker LTS');
+      pageTitle('FGU LTS');
     }
   });
 

@@ -250,7 +250,7 @@ app.get('/:path', (req, reply) => {
   // If a GET request is sent to /test-shutdown and a script-generated shutdown file
   // is present, gracefully shut the server down.
   if (reqPath === 'test-shutdown' && existsSync(shutdown)) {
-    console.log('Holy Unblocker is shutting down.');
+    console.log('FGU is shutting down.');
     app.close();
     unlinkSync(shutdown);
     process.exitCode = 0;
@@ -353,4 +353,4 @@ app.setNotFoundHandler((req, reply) => {
 });
 
 app.listen({ port: serverUrl.port, host: serverUrl.hostname });
-console.log(`Holy Unblocker is listening on port ${serverUrl.port}.`);
+console.log(`FGU is listening on port ${serverUrl.port}.`);

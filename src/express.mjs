@@ -132,4 +132,4 @@ app.use((req, res) => {
 });
 
 server.listen(port);
-console.log('Holy Unblocker is listening on port ' + port + '.');
+console.log('FGU is listening on port ' + port + '.');

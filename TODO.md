@@ -1,4 +1,4 @@
-This will be our nonexhaustive todo list for Holy Unblocker LTS v6.x.x and above. Release for production will be v8.x.x and above.
+This will be our nonexhaustive todo list for FGU LTS v6.x.x and above. Release for production will be v8.x.x and above.
 
 ## Code Cleanup
 
@@ -23,7 +23,7 @@ This will be our nonexhaustive todo list for Holy Unblocker LTS v6.x.x and above
 - [x] Add Rammerhead support - done
 - [x] Fix slow Ultraviolet speeds despite being local; something on the backend?? - done
 - [x] Fix Ultraviolet on Firefox - (partial/needs work)
-- [ ] Adapt Applications page to use either Rammerhead or UV (for Reddit, YouTube, Discord)
+- [ ] Adapt Applications page to use either Rammerhead or UV (for Reddit, YouTube, ...)
 - [x] libcurl, epoxy and all that fun stuff - done
 - [x] socks5/tor routing option that can be configured (enabled) via either a cookie or pathname as a settings meny option - done
 - [ ] Update games page content to 10000 games

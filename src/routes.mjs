@@ -60,7 +60,7 @@ const externalPages = {
     wisp: 'https://github.com/MercuryWorkshop/wisp-protocol',
   },
   'titaniumnetwork-documentation': 'https://docs.titaniumnetwork.org',
-  'rammerhead-discord': 'https://discord.gg/VNT4E7gN5Y',
+  'rammerhead-...': 'https://....gg/VNT4E7gN5Y',
 };
 
 const cookingInserts = insert.content,

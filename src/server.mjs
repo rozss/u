@@ -19,7 +19,7 @@ import { existsSync, unlinkSync } from 'node:fs';
 import ecosystem from '../ecosystem.config.js';
 
 const config = Object.freeze(
-    JSON.parse(await readFile(new URL('./config.json', import.meta.url)))
+    JSON.parse(await readFile(new URL('../config.json', import.meta.url)))
   ),
   ecosystemConfig = Object.freeze(
     ecosystem.apps.find((app) => app.name === 'HolyUB') || ecosystem.apps[0]
@@ -128,6 +128,37 @@ app.register(fastifyStatic, {
 app.register(fastifyStatic, {
   root: fileURLToPath(new URL('../views/archive', import.meta.url)),
   prefix: '/archive/',
+  decorateReply: false,
+});
+
+app.register(fastifyStatic, {
+  root: fileURLToPath(new URL('../views/archive/gfiles/rarch', import.meta.url)),
+  prefix: '/serving/',
+  decorateReply: false,
+});
+
+app.register(fastifyStatic, {
+  root: fileURLToPath(new URL('../views/archive/gfiles/rarch/cores', import.meta.url)),
+  prefix: '/cores/',
+  decorateReply: false,
+});
+
+app.register(fastifyStatic, {
+  root: fileURLToPath(new URL('../views/archive/gfiles/rarch/info', import.meta.url)),
+  prefix: '/info/',
+  decorateReply: false,
+});
+
+app.register(fastifyStatic, {
+  root: fileURLToPath(new URL('../views/archive/gfiles/rarch/cores', import.meta.url)),
+  prefix: '/uauth/',
+  decorateReply: false,
+});
+
+// NEVER commit roms due to piracy concerns
+app.register(fastifyStatic, {
+  root: fileURLToPath(new URL('../views/archive/gfiles/rarch/roms', import.meta.url)),
+  prefix: '/roms/',
   decorateReply: false,
 });
 
